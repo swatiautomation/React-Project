@@ -1,0 +1,37 @@
+[
+  {
+    "question": "What will `typeof null` return in JavaScript?",
+    "options": ["\"null\"", "\"object\"", "\"undefined\"", "\"number\""],
+    "answer": "\"object\""
+  },
+  {
+    "question": "Which method is used to convert a JSON string into a JavaScript object?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.convert()",
+      "JSON.toObject()"
+    ],
+    "answer": "JSON.parse()"
+  },
+  {
+    "question": "What is the output of the following code? console.log(0.1 + 0.2 === 0.3);",
+    "options": ["true", "false", "undefined", "NaN"],
+    "answer": "false"
+  },
+  {
+    "question": "Which keyword is used to declare a block-scoped variable?",
+    "options": ["var", "let", "const", "Both let and const"],
+    "answer": "Both let and const"
+  },
+  {
+    "question": "What does Array.prototype.map() do?",
+    "options": [
+      "Modifies the original array",
+      "Returns a new array with transformed elements",
+      "Filters elements from an array",
+      "Sorts the array"
+    ],
+    "answer": "Returns a new array with transformed elements"
+  }
+]
