@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  /* padding: 30px; */
+
+  border: red solid;
+  overflow: hidden;
+}
+header {
+  /* max-width: 80%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  /* border: blue solid; */
+  padding: 20px 16px;
+  background-color: rgb(31, 180, 214);
+  font-weight: bold;
+  font-size: 16px;
+}
+.mainNav {
+  display: flex;
+  gap: 30px;
+}
+.menuIcons {
+  display: flex;
+  gap: 30px;
+}
+.burgerMenu {
+  display: none;
+}
+
+.sideDrawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 20px;
+  z-index: 100;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.sideDrawer.open {
+  transform: translateX(0);
+}
+
+.closeBtn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .mainNav {
+    display: none;
+  }
+  .burgerMenu {
+    display: block;
+  }
+}
