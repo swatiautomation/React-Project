@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.page {
+  background: red;
+  height: 100vh;
+}
